@@ -1,0 +1,21 @@
+<HomeScreen>:
+    MDBoxLayout:
+        size_hint: (1,1)
+        orientation: "vertical"
+        spacing: "20sp"
+
+        MDTopAppBar:
+            title: "WeatherApp"
+            md_bg_color: "#602b7a"
+        MDBoxLayout:
+            padding: "20sp"
+            spacing: "20sp"
+            MDTextField:
+                hint_text: "Введіть місто"
+                mode: "fill"
+            MDIconButton:
+                icon: "magnify"
+                md_bg_color: "#602b7a"
+        MDLabel:
+            text: "Content"
+            halign: "center"
