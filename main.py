@@ -1,3 +1,4 @@
+from kivymd.uix.card import MDCard
 from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
@@ -6,6 +7,11 @@ from kivymd.uix.button import MDRectangleFlatIconButton
 import requests
 
 from settings import API_KEY, WEATHER_URL
+
+class WeatherCard(MDCard):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
 
 class HomeScreen(MDScreen):
     def __init__(self, *args, **kwargs):
