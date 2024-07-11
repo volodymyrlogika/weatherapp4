@@ -30,7 +30,6 @@ class HomeScreen(MDScreen):
         self.ids.content_text.text = f'{temp}°C'
 
 
-
 class MainApp(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Dark"
